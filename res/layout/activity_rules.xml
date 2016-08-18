@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe0ff2d"
+    tools:context=".Rules" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Rules:
+The game is a 2-player game.
+Its layout consists of a 4x4 or 6x6 grid of cells which can be set to either white or black.
+Initially,a 2x2 area at the centre of the grid is filled with black(2 cells) and white(2 cells).
+Black plays first followed by White and so on.
+Whenever one or more black cells are trapped between 2 white cells (vertically,horizontally and/or diagonally),all of them are converted to white and vice versa.
+There are 2 counters for black and white (each preset to 2) at the bottom of the grid which count the current number of black cells and white cells,respectively.
+An undo button is provided at the bottom left corner of the screen to reverse the last move(Only once).
+The player who has more number of cells assigned to his color at the end of the game is declared the winner.
+        "
+        android:textSize="17dp" />
+
+</RelativeLayout>
